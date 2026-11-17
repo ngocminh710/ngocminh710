@@ -22,6 +22,10 @@ Nice to meet you!!! 🍯
 
 <img src="./assets/toolbox.svg" width="100%" alt="TypeScript, JavaScript, HTML, C++, C, Java" />
 
+### 🐾 my paw prints this year
+
+<img src="./assets/cozy-contributions.svg" width="100%" alt="My GitHub contribution calendar for the last year, drawn in pastel pink with a little bear peeking over the top." />
+
 <div align="center">
 
 <img src="./assets/paw-trail.svg" width="100%" alt="" />
