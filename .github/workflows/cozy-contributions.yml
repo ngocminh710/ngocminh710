@@ -1,0 +1,34 @@
+name: Cozy contribution graph
+
+# Redraws assets/cozy-contributions.svg from the public contribution calendar.
+on:
+  schedule:
+    - cron: "23 9 * * *" # once a day, early morning US Eastern
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Draw the calendar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python3 .github/scripts/cozy_contributions.py assets/cozy-contributions.svg
+
+      - name: Commit the refreshed image
+        run: |
+          if [ -z "$(git status --porcelain -- assets/cozy-contributions.svg)" ]; then
+            echo "Nothing new to draw today."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cozy-contributions.svg
+          git commit -m "Refresh cozy contribution graph"
+          git push
