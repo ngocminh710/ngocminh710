@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 64" width="880" height="64" role="img" aria-labelledby="title">
+  <title id="title">TypeScript, JavaScript, HTML, C++, C, Java</title>
+  <defs>
+    <g id="paw">
+      <ellipse cx="0" cy="4" rx="7" ry="5.6"/>
+      <circle cx="-8" cy="-3.5" r="3"/>
+      <circle cx="-3" cy="-8.5" r="3.2"/>
+      <circle cx="3" cy="-8.5" r="3.2"/>
+      <circle cx="8" cy="-3.5" r="3"/>
+    </g>
+  </defs>
+  <style>
+    text { font-family: ui-rounded, "SF Pro Rounded", "Nunito", "Quicksand", "Varela Round", "Arial Rounded MT Bold", "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 16px; font-weight: 700; fill: #5B3A29; }
+    .pill { animation: bob 2.6s ease-in-out infinite alternate; }
+    @keyframes bob { from { transform: translateY(2px); } to { transform: translateY(-2px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <g class="pill" style="animation-delay: -0.00s">
+    <rect x="82" y="13" width="150" height="38" rx="19" fill="#FFE1EC" stroke="#F7A8C4" stroke-width="2"/>
+    <g transform="translate(105 33) scale(0.72)" fill="#F7A8C4"><use href="#paw"/></g>
+    <text x="168" y="37.5" text-anchor="middle">TypeScript</text>
+  </g>
+  <g class="pill" style="animation-delay: -0.45s">
+    <rect x="246" y="13" width="148" height="38" rx="19" fill="#FFF1CF" stroke="#F5C452" stroke-width="2"/>
+    <g transform="translate(269 33) scale(0.72)" fill="#F5C452"><use href="#paw"/></g>
+    <text x="331" y="37.5" text-anchor="middle">JavaScript</text>
+  </g>
+  <g class="pill" style="animation-delay: -0.90s">
+    <rect x="408" y="13" width="100" height="38" rx="19" fill="#FFE6D5" stroke="#F2A477" stroke-width="2"/>
+    <g transform="translate(431 33) scale(0.72)" fill="#F2A477"><use href="#paw"/></g>
+    <text x="469" y="37.5" text-anchor="middle">HTML</text>
+  </g>
+  <g class="pill" style="animation-delay: -1.35s">
+    <rect x="522" y="13" width="86" height="38" rx="19" fill="#E9E0FF" stroke="#B79BEF" stroke-width="2"/>
+    <g transform="translate(545 33) scale(0.72)" fill="#B79BEF"><use href="#paw"/></g>
+    <text x="576" y="37.5" text-anchor="middle">C++</text>
+  </g>
+  <g class="pill" style="animation-delay: -1.80s">
+    <rect x="622" y="13" width="72" height="38" rx="19" fill="#DCEBFF" stroke="#86B4EE" stroke-width="2"/>
+    <g transform="translate(645 33) scale(0.72)" fill="#86B4EE"><use href="#paw"/></g>
+    <text x="669" y="37.5" text-anchor="middle">C</text>
+  </g>
+  <g class="pill" style="animation-delay: -2.25s">
+    <rect x="708" y="13" width="90" height="38" rx="19" fill="#DDF4EE" stroke="#6FC3AE" stroke-width="2"/>
+    <g transform="translate(731 33) scale(0.72)" fill="#6FC3AE"><use href="#paw"/></g>
+    <text x="764" y="37.5" text-anchor="middle">Java</text>
+  </g>
+</svg>

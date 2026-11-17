@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 44" width="880" height="44" role="img" aria-hidden="true">
+  <defs>
+    <g id="paw">
+      <ellipse cx="0" cy="4" rx="7" ry="5.6"/>
+      <circle cx="-8" cy="-3.5" r="3"/>
+      <circle cx="-3" cy="-8.5" r="3.2"/>
+      <circle cx="3" cy="-8.5" r="3.2"/>
+      <circle cx="8" cy="-3.5" r="3"/>
+    </g>
+  </defs>
+  <style>
+    .step { transform-box: fill-box; transform-origin: center; animation: step 7s ease-out infinite backwards; }
+    @keyframes step {
+      0% { opacity: 0; transform: scale(0.5); }
+      6% { opacity: 1; transform: scale(1); }
+      78% { opacity: 1; transform: scale(1); }
+      90%, 100% { opacity: 0; transform: scale(1); }
+    }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <g transform="translate(240 15) rotate(78) scale(0.78)" fill="#F7A8C4"><use href="#paw" class="step" style="animation-delay: 0.00s"/></g>
+  <g transform="translate(280 29) rotate(102) scale(0.78)" fill="#F5B98A"><use href="#paw" class="step" style="animation-delay: 0.28s"/></g>
+  <g transform="translate(320 15) rotate(78) scale(0.78)" fill="#F7A8C4"><use href="#paw" class="step" style="animation-delay: 0.56s"/></g>
+  <g transform="translate(360 29) rotate(102) scale(0.78)" fill="#F5B98A"><use href="#paw" class="step" style="animation-delay: 0.84s"/></g>
+  <g transform="translate(400 15) rotate(78) scale(0.78)" fill="#F7A8C4"><use href="#paw" class="step" style="animation-delay: 1.12s"/></g>
+  <g transform="translate(440 29) rotate(102) scale(0.78)" fill="#F5B98A"><use href="#paw" class="step" style="animation-delay: 1.40s"/></g>
+  <g transform="translate(480 15) rotate(78) scale(0.78)" fill="#F7A8C4"><use href="#paw" class="step" style="animation-delay: 1.68s"/></g>
+  <g transform="translate(520 29) rotate(102) scale(0.78)" fill="#F5B98A"><use href="#paw" class="step" style="animation-delay: 1.96s"/></g>
+  <g transform="translate(560 15) rotate(78) scale(0.78)" fill="#F7A8C4"><use href="#paw" class="step" style="animation-delay: 2.24s"/></g>
+  <g transform="translate(600 29) rotate(102) scale(0.78)" fill="#F5B98A"><use href="#paw" class="step" style="animation-delay: 2.52s"/></g>
+  <g transform="translate(640 15) rotate(78) scale(0.78)" fill="#F7A8C4"><use href="#paw" class="step" style="animation-delay: 2.80s"/></g>
+</svg>

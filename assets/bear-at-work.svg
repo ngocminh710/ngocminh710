@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="880" height="320" role="img" aria-labelledby="title desc">
+  <title id="title">Hi, I'm Minh!</title>
+  <desc id="desc">A cartoon bear in a lavender hoodie and mint headphones types at a keyboard beside a monitor full of colorful code. Text: building cozy things for the web.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6E9"/>
+      <stop offset="1" stop-color="#FFE1EC"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="880" height="320" rx="28"/></clipPath>
+    <path id="heart" d="M0 -3 C0 -9 -9 -9 -9 -3 C-9 2 -3 5 0 8 C3 5 9 2 9 -3 C9 -9 0 -9 0 -3 Z"/>
+    <path id="spark" d="M0 -9 C1 -2.5 2.5 -1 9 0 C2.5 1 1 2.5 0 9 C-1 2.5 -2.5 1 -9 0 C-2.5 -1 -1 -2.5 0 -9 Z"/>
+    <g id="paw">
+      <ellipse cx="0" cy="4" rx="7" ry="5.6"/>
+      <circle cx="-8" cy="-3.5" r="3"/>
+      <circle cx="-3" cy="-8.5" r="3.2"/>
+      <circle cx="3" cy="-8.5" r="3.2"/>
+      <circle cx="8" cy="-3.5" r="3"/>
+    </g>
+  </defs>
+
+  <style>
+    .rounded { font-family: ui-rounded, "SF Pro Rounded", "Nunito", "Quicksand", "Varela Round", "Arial Rounded MT Bold", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, "Liberation Mono", monospace; }
+
+    .bob { transform-origin: 170px 192px; animation: bob 3.4s ease-in-out infinite alternate; }
+    @keyframes bob { from { transform: rotate(-1.6deg); } to { transform: rotate(1.6deg); } }
+
+    .eye { transform-box: fill-box; transform-origin: center; animation: blink 4.8s infinite; }
+    @keyframes blink { 0%, 91%, 100% { transform: scaleY(1); } 94.5% { transform: scaleY(0.08); } }
+
+    .tapL { animation: tap 0.44s ease-in-out infinite alternate; }
+    .tapR { animation: tap 0.44s ease-in-out -0.22s infinite alternate; }
+    @keyframes tap { from { transform: translateY(0); } to { transform: translateY(-5px); } }
+
+    .code rect { transform-box: fill-box; transform-origin: left center; animation: code 6.4s ease-out infinite backwards; }
+    .code .l2 { animation-delay: 0.5s; } .code .l3 { animation-delay: 1s; }
+    .code .l4 { animation-delay: 1.5s; } .code .l5 { animation-delay: 2s; }
+    .code .l6 { animation-delay: 2.5s; } .code .l7 { animation-delay: 3s; }
+    @keyframes code {
+      0% { transform: scaleX(0); opacity: 1; }
+      8% { transform: scaleX(1); opacity: 1; }
+      88% { transform: scaleX(1); opacity: 1; }
+      94%, 100% { transform: scaleX(1); opacity: 0; }
+    }
+
+    .caret { animation: caretBlink 1s steps(2, start) infinite; }
+    @keyframes caretBlink { to { visibility: hidden; } }
+
+    .cover { transform-box: fill-box; transform-origin: right center; transform: scaleX(0); animation: reveal 9s steps(34, end) infinite; }
+    @keyframes reveal { 0% { transform: scaleX(1); } 40%, 100% { transform: scaleX(0); } }
+    .cursor { transform: translateX(341px); animation: cursor 9s steps(34, end) infinite; }
+    @keyframes cursor { 0% { transform: translateX(0); } 40%, 100% { transform: translateX(341px); } }
+
+    .float { transform-box: fill-box; transform-origin: center; animation: float 4.6s ease-in infinite backwards; }
+    .f2 { animation-delay: 1.5s; } .f3 { animation-delay: 3s; } .f4 { animation-delay: 2.2s; }
+    @keyframes float {
+      0% { transform: translateY(8px) scale(0.5); opacity: 0; }
+      18% { opacity: 1; }
+      70% { opacity: 0.9; }
+      100% { transform: translateY(-48px) scale(1.1); opacity: 0; }
+    }
+
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: twinkle 2.8s ease-in-out infinite alternate; }
+    .t2 { animation-delay: -0.9s; } .t3 { animation-delay: -1.8s; }
+    @keyframes twinkle { from { transform: scale(0.55); opacity: 0.45; } to { transform: scale(1.1); opacity: 1; } }
+
+    .steam path { animation: steam 3s ease-in-out infinite; }
+    .steam .s2 { animation-delay: -1.5s; }
+    @keyframes steam {
+      0% { transform: translateY(5px); opacity: 0; }
+      40% { opacity: 0.9; }
+      100% { transform: translateY(-9px); opacity: 0; }
+    }
+
+    .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 1.6s ease-in-out infinite alternate; }
+    @keyframes pulse { from { transform: scale(0.88); } to { transform: scale(1.12); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#card)">
+    <!-- backdrop -->
+    <rect width="880" height="320" fill="url(#bg)"/>
+    <circle cx="24" cy="20" r="74" fill="#FFE8C4" opacity="0.6"/>
+    <circle cx="772" cy="26" r="84" fill="#FFFFFF" opacity="0.45"/>
+    <circle cx="866" cy="312" r="96" fill="#FFD3E2" opacity="0.6"/>
+
+    <g fill="#FFC96B">
+      <use href="#spark" class="twinkle" x="456" y="44"/>
+      <g transform="translate(838 150) scale(0.7)"><use href="#spark" class="twinkle t2"/></g>
+      <g transform="translate(38 150) scale(0.75)"><use href="#spark" class="twinkle t3"/></g>
+    </g>
+    <g fill="#F7A8C4">
+      <g transform="translate(716 56) scale(0.6)"><use href="#spark" class="twinkle t2"/></g>
+      <use href="#heart" x="806" y="74" transform="rotate(14 806 74)"/>
+      <use href="#heart" x="444" y="118" transform="translate(444 118) rotate(-14) scale(0.7) translate(-444 -118)"/>
+    </g>
+    <g fill="#F7A8C4" opacity="0.5">
+      <use href="#paw" x="706" y="292" transform="rotate(-18 706 292)"/>
+      <use href="#paw" x="748" y="278" transform="rotate(8 748 278)"/>
+      <use href="#paw" x="792" y="294" transform="rotate(-10 792 294)"/>
+    </g>
+
+    <!-- monitor -->
+    <g>
+      <rect x="341" y="212" width="18" height="34" fill="#EDBFD0"/>
+      <rect x="316" y="242" width="68" height="11" rx="5.5" fill="#EDBFD0"/>
+      <rect x="280" y="104" width="140" height="110" rx="18" fill="#FFFFFF" stroke="#EDBFD0" stroke-width="4"/>
+      <rect x="291" y="115" width="118" height="78" rx="10" fill="#4B3B5E"/>
+      <circle cx="301" cy="125" r="2.6" fill="#F7A8C4"/>
+      <circle cx="309" cy="125" r="2.6" fill="#FFD98A"/>
+      <circle cx="317" cy="125" r="2.6" fill="#8ED1C0"/>
+      <g class="code">
+        <rect class="l1" x="301" y="136" width="34" height="6" rx="3" fill="#F7A8C4"/>
+        <rect class="l2" x="340" y="136" width="24" height="6" rx="3" fill="#FFD98A"/>
+        <rect class="l3" x="311" y="148" width="52" height="6" rx="3" fill="#8ED1C0"/>
+        <rect class="l4" x="311" y="160" width="28" height="6" rx="3" fill="#CDBBF5"/>
+        <rect class="l5" x="344" y="160" width="40" height="6" rx="3" fill="#F7A8C4"/>
+        <rect class="l6" x="311" y="172" width="44" height="6" rx="3" fill="#FFD98A"/>
+        <rect class="l7" x="301" y="184" width="18" height="6" rx="3" fill="#8ED1C0"/>
+      </g>
+      <rect class="caret" x="323" y="181" width="5" height="9" rx="1.5" fill="#FFFFFF"/>
+      <circle cx="350" cy="204" r="3" fill="#8ED1C0" class="pulse"/>
+      <!-- sticky note -->
+      <g transform="rotate(9 410 108)">
+        <rect x="398" y="94" width="26" height="26" rx="4" fill="#FFE08A"/>
+        <use href="#heart" x="411" y="108" fill="#F58FB5" transform="translate(411 108) scale(0.62) translate(-411 -108)"/>
+      </g>
+    </g>
+
+    <!-- floating bits above the monitor -->
+    <g>
+      <text class="mono float" x="300" y="92" font-size="15" font-weight="700" fill="#B79BEF">&lt;/&gt;</text>
+      <use href="#heart" class="float f2" x="350" y="84" fill="#F58FB5"/>
+      <text class="mono float f3" x="384" y="74" font-size="15" font-weight="700" fill="#6FC3AE">{ }</text>
+      <g transform="translate(74 76) scale(0.8)"><use href="#heart" class="float f4" fill="#F7A8C4"/></g>
+    </g>
+
+    <!-- mug -->
+    <g>
+      <g class="steam" fill="none" stroke="#E7BFD0" stroke-width="2.6" stroke-linecap="round">
+        <path d="M55 218 q-4 -5 0 -10 q4 -5 0 -10"/>
+        <path class="s2" d="M67 218 q-4 -5 0 -10 q4 -5 0 -10"/>
+      </g>
+      <path d="M47 233 h-4 a6.5 6.5 0 0 0 0 13 h4" fill="none" stroke="#EDBFD0" stroke-width="3.2" stroke-linecap="round"/>
+      <rect x="46" y="225" width="30" height="28" rx="8" fill="#FFFFFF" stroke="#EDBFD0" stroke-width="2.6"/>
+      <use href="#heart" x="61" y="240" fill="#F7A8C4" transform="translate(61 240) scale(0.6) translate(-61 -240)"/>
+    </g>
+
+    <!-- bear -->
+    <g>
+      <!-- hoodie -->
+      <ellipse cx="170" cy="242" rx="84" ry="66" fill="#CDBBF5"/>
+      <path d="M150 190 q20 16 40 0" fill="none" stroke="#B9A4EE" stroke-width="5" stroke-linecap="round"/>
+      <g stroke="#FFFFFF" stroke-width="3" stroke-linecap="round">
+        <path d="M160 200 v16"/>
+        <path d="M180 200 v16"/>
+      </g>
+      <circle cx="160" cy="219" r="3.2" fill="#FFFFFF"/>
+      <circle cx="180" cy="219" r="3.2" fill="#FFFFFF"/>
+
+      <g class="bob">
+        <!-- head -->
+        <ellipse cx="170" cy="128" rx="74" ry="66" fill="#C98D62"/>
+        <!-- headphones -->
+        <path d="M98 134 C98 40 242 40 242 134" fill="none" stroke="#8ED1C0" stroke-width="9" stroke-linecap="round"/>
+        <rect x="82" y="110" width="26" height="50" rx="13" fill="#8ED1C0"/>
+        <rect x="232" y="110" width="26" height="50" rx="13" fill="#8ED1C0"/>
+        <rect x="88" y="120" width="8" height="30" rx="4" fill="#B9E6DA"/>
+        <rect x="244" y="120" width="8" height="30" rx="4" fill="#B9E6DA"/>
+        <!-- ears -->
+        <circle cx="118" cy="76" r="25" fill="#C98D62"/>
+        <circle cx="222" cy="76" r="25" fill="#C98D62"/>
+        <circle cx="118" cy="76" r="13" fill="#F6B3AE"/>
+        <circle cx="222" cy="76" r="13" fill="#F6B3AE"/>
+        <!-- face -->
+        <ellipse cx="123" cy="150" rx="12" ry="8" fill="#F59C9C" opacity="0.6"/>
+        <ellipse cx="217" cy="150" rx="12" ry="8" fill="#F59C9C" opacity="0.6"/>
+        <ellipse cx="170" cy="153" rx="31" ry="24" fill="#FCEBD7"/>
+        <g class="eye">
+          <circle cx="141" cy="127" r="7" fill="#4A3024"/>
+          <circle cx="143.4" cy="124.4" r="2.4" fill="#FFFFFF"/>
+        </g>
+        <g class="eye">
+          <circle cx="199" cy="127" r="7" fill="#4A3024"/>
+          <circle cx="201.4" cy="124.4" r="2.4" fill="#FFFFFF"/>
+        </g>
+        <ellipse cx="170" cy="142" rx="9.5" ry="7" fill="#4A3024"/>
+        <ellipse cx="167.5" cy="140" rx="3" ry="1.8" fill="#FFFFFF" opacity="0.55"/>
+        <path d="M170 149 v7 M170 156 q-8 8 -15 0 M170 156 q8 8 15 0" fill="none" stroke="#4A3024" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <!-- desk -->
+    <rect x="44" y="264" width="392" height="70" fill="#F4DABC"/>
+    <rect x="28" y="252" width="424" height="17" rx="8.5" fill="#E7BC90"/>
+    <rect x="204" y="284" width="72" height="24" rx="8" fill="none" stroke="#E7BC90" stroke-width="3"/>
+    <use href="#heart" x="240" y="296" fill="#E7BC90" transform="translate(240 296) scale(0.6) translate(-240 -296)"/>
+
+    <!-- keyboard -->
+    <rect x="110" y="237" width="120" height="16" rx="7" fill="#FFFFFF" stroke="#EDBFD0" stroke-width="2.6"/>
+    <g>
+      <rect x="120" y="243" width="7" height="4" rx="2" fill="#F7A8C4"/>
+      <rect x="130.5" y="243" width="7" height="4" rx="2" fill="#CDBBF5"/>
+      <rect x="141" y="243" width="7" height="4" rx="2" fill="#8ED1C0"/>
+      <rect x="151.5" y="243" width="7" height="4" rx="2" fill="#FFD98A"/>
+      <rect x="162" y="243" width="16" height="4" rx="2" fill="#F7A8C4"/>
+      <rect x="181.5" y="243" width="7" height="4" rx="2" fill="#CDBBF5"/>
+      <rect x="192" y="243" width="7" height="4" rx="2" fill="#8ED1C0"/>
+      <rect x="202.5" y="243" width="7" height="4" rx="2" fill="#FFD98A"/>
+      <rect x="213" y="243" width="7" height="4" rx="2" fill="#F7A8C4"/>
+    </g>
+
+    <!-- arms -->
+    <g class="tapL">
+      <path d="M104 214 L128 234" stroke="#BBA6EF" stroke-width="25" stroke-linecap="round"/>
+      <ellipse cx="133" cy="237" rx="14.5" ry="10.5" fill="#C98D62"/>
+    </g>
+    <g class="tapR">
+      <path d="M236 214 L212 234" stroke="#BBA6EF" stroke-width="25" stroke-linecap="round"/>
+      <ellipse cx="207" cy="237" rx="14.5" ry="10.5" fill="#C98D62"/>
+    </g>
+
+    <!-- words -->
+    <g class="rounded">
+      <rect x="472" y="62" width="222" height="32" rx="16" fill="#FFFFFF" opacity="0.9"/>
+      <g transform="translate(492 79) scale(0.72)"><use href="#heart" class="pulse" fill="#F58FB5"/></g>
+      <text x="507" y="83.5" font-size="15" font-weight="700" letter-spacing="0.6" fill="#C0708F">cozy coding corner</text>
+
+      <text x="470" y="158" font-size="56" font-weight="800" fill="#5B3A29">Hi, I'm Minh!</text>
+
+      <rect x="472" y="184" width="378" height="42" rx="13" fill="#FFFFFF" stroke="#F6CFDD" stroke-width="2"/>
+      <text class="mono" x="490" y="211" font-size="16.5" font-weight="600" fill="#7A5240" textLength="340" lengthAdjust="spacing"><tspan fill="#F58FB5">&gt;</tspan> building cozy things for the web</text>
+      <rect class="cover" x="490" y="193" width="340" height="26" fill="#FFFFFF"/>
+      <g class="cursor"><rect class="caret" x="490" y="196" width="9" height="20" rx="2.5" fill="#F58FB5"/></g>
+
+      <text x="474" y="262" font-size="17" font-weight="600" fill="#A1705F">web developer · nice to meet you!</text>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="878" height="318" rx="27" fill="none" stroke="#F6CFDD" stroke-width="2"/>
+</svg>
