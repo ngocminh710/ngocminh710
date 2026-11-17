@@ -89,7 +89,7 @@
     <circle cx="866" cy="312" r="96" fill="#FFD3E2" opacity="0.6"/>
 
     <g fill="#FFC96B">
-      <use href="#spark" class="twinkle" x="456" y="44"/>
+      <g transform="translate(456 44)"><use href="#spark" class="twinkle"/></g>
       <g transform="translate(838 150) scale(0.7)"><use href="#spark" class="twinkle t2"/></g>
       <g transform="translate(38 150) scale(0.75)"><use href="#spark" class="twinkle t3"/></g>
     </g>
@@ -134,7 +134,7 @@
     <!-- floating bits above the monitor -->
     <g>
       <text class="mono float" x="300" y="92" font-size="15" font-weight="700" fill="#B79BEF">&lt;/&gt;</text>
-      <use href="#heart" class="float f2" x="350" y="84" fill="#F58FB5"/>
+      <g transform="translate(350 84)"><use href="#heart" class="float f2" fill="#F58FB5"/></g>
       <text class="mono float f3" x="384" y="74" font-size="15" font-weight="700" fill="#6FC3AE">{ }</text>
       <g transform="translate(74 76) scale(0.8)"><use href="#heart" class="float f4" fill="#F7A8C4"/></g>
     </g>
